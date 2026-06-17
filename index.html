@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Portal</title>
+    <meta name="description" content="Portfolio portal tracking my WDD 130 coursework and development progress at BYU-Idaho.">
+    <meta name="author" content="Your Name">
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo_image.png" alt="My Portfolio Portal Logo">
+        <h1>My Portfolio Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to my portfolio</h2>
+            <p>Welcome to my front-end web development portfolio. Here I will showcase a multitude of assignments that I have worked on in order to show my growth as a front-end developer. All projects have been put together with clean and professional HTML and CSS. Use the navigation links above to explore my highlighted projects.</p>
+        </section>
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div>
+                    <h3>[WWR Card]</h3>
+                    <p>White Water Rafting project site files.</p>
+                </div>
+                <div>
+                    <h3>[ICE Card]</h3>
+                    <p>In-Class Exercises and challenge files.</p>
+                </div>
+                <div>
+                    <h3>[Future Projects]</h3>
+                    <p>Upcoming layout assignments.</p>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Component</th>
+                        <th>File Directory Target</th>
+                        <th>Completion Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>White Water Rafting Site</td>
+                        <td>/wwr/index.html</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>In-Class Exercises</td>
+                        <td>/ice.html</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>About Me Preview</h2>
+            <img src="IMG_E0763.JPG" alt="Profile placeholder image">
+            <p>I was born in Idaho on January 13, 2003 and raised in a military family, which gave me a unique oppurtunity to live in several different states. I was married to my wife on December 21, 2024 and we currently reside in Pocatello, Idaho. I am a Sophomore at Brigham Young University-Idaho, where I am actively pursuing my Bachelors degree in Software Engineering. </p>
+        </section>
+        <section>
+            <h2>Skills / Interests List</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Design</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <form action="#" method="get">
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" name="userName">
+
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="userEmail">
+
+                <label for="user-message">Message:</label>
+                <textarea id="user-message" name="userMessage" rows="4" cols="30"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Socials: GitHub | LinkedIn</p>
+        <p>&copy; 2026 | My Portfolio Portal | All Rights Reserved</p>
+        <p>Email: jbw473@byui.edu</p>
+    </footer>
+
+</body>
+</html>

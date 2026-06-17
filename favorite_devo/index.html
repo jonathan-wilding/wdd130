@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite BYU-I Devotionals</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-image">
+            <h1>BYU-I Devotionals</h1>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h2>My Favorite Devotionals</h2>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Speaker</th>
+                        <th>Title</th>
+                        <th>Location</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>David A. Bednar</td>
+                        <td>In the Strength of the Lord</td>
+                        <td>I-Center</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>Kim B. Clark</td>
+                        <td>Real Testimony</td>
+                        <td>I-Center</td>
+                        <td>2007</td>
+                    </tr>
+                    <tr>
+                        <td>Henry B. Eyring</td>
+                        <td>A Steady Awakening</td>
+                        <td>Hart Auditorium</td>
+                        <td>1998</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form-container">
+            <h3>Submit a New Devotional</h3>
+            <form action="#" method="POST" class="devo-form">
+                <div class="form-group">
+                    <label for="speaker">Speaker Name</label>
+                    <input type="text" id="speaker" name="speaker" placeholder="e.g., Elder Holland" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Devotional Title</label>
+                    <input type="text" id="title" name="title" placeholder="e.g., Remember Lot's Wife" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location">
+                        <option value="I-Center">BYU-I Center</option>
+                        <option value="Hart">Hart Auditorium</option>
+                        <option value="Taylor">Taylor Cultural Hall</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input type="number" id="year" name="year" min="1970" max="2026" placeholder="2026" required>
+                </div>
+                <div class="form-group full-width checkbox-group">
+                    <input type="checkbox" id="favorite" name="favorite">
+                    <label id="checkbox-label" for="favorite">Mark as "All-Time Favorite" Devotional</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Add Devotional</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
